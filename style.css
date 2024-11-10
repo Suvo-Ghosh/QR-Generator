@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(90deg, rgb(36, 34, 34), rgb(29, 1, 29));
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.qr-container {
+    background-color: rgb(255, 255, 255, 0.2);
+    width: 80%; 
+    max-width: 350px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.qr-container p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.qr-container input {
+    padding: 0.6rem 0.4rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 0.2rem; 
+    margin-bottom: 10px;
+}
+.empty-input{
+    animation: ziggle 0.1s linear 10;
+}
+
+.image-container{
+    width: 70%;
+    margin-inline: auto;   
+    height: 0;  
+}
+
+.image-container img{
+    width: 100%;
+    border-radius: 5px; 
+}
+
+
+.qr-container button{
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    background-color: greenyellow;  
+    padding: 0.6rem;
+    border-radius: 0.2rem;
+    font-weight: 550;
+    cursor: pointer; 
+
+    &&:active{
+        scale: 1.01;
+    }
+    &&:hover{
+        background-color: rgb(137, 170, 83);  
+    }
+}
+
+@keyframes ziggle {
+    0%{
+        transform: translateX(2px);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(2px);
+    }
+    75%{
+        transform: translateX(-2px);
+    }
+    100%{
+        transform: translateX(2px);
+    }
+}
