@@ -16,7 +16,7 @@ body {
 
 .qr-container {
     background-color: rgb(255, 255, 255, 0.2);
-    width: 80%; 
+    width: 80%;
     max-width: 350px;
     border-radius: 0.5rem;
     padding: 1rem;
@@ -35,57 +35,62 @@ body {
     font-size: 1rem;
     border: none;
     outline: none;
-    border-radius: 0.2rem; 
+    border-radius: 0.2rem;
     margin-bottom: 10px;
 }
-.empty-input{
+
+.empty-input {
     animation: ziggle 0.1s linear 10;
 }
 
-.image-container{
+.image-container {
     width: 70%;
-    margin-inline: auto;   
-    height: 0;  
+    margin-inline: auto;
+    height: 0;
 }
 
-.image-container img{
+.image-container img {
     width: 100%;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 
-
-.qr-container button{
+.qr-container button {
     font-size: 1.5rem;
     border: none;
     outline: none;
-    background-color: greenyellow;  
+    background-color: greenyellow;
     padding: 0.6rem;
     border-radius: 0.2rem;
     font-weight: 550;
-    cursor: pointer; 
+    cursor: pointer;
 
-    &&:active{
+    &&:active {
         scale: 1.01;
     }
-    &&:hover{
-        background-color: rgb(137, 170, 83);  
+
+    &&:hover {
+        background-color: rgb(137, 170, 83);
     }
 }
 
 @keyframes ziggle {
-    0%{
+    0% {
         transform: translateX(2px);
     }
-    25%{
+
+    25% {
         transform: translateX(-2px);
     }
-    50%{
+
+    50% {
         transform: translateX(2px);
     }
-    75%{
+
+    75% {
         transform: translateX(-2px);
     }
-    100%{
+
+    100% {
         transform: translateX(2px);
     }
 }
