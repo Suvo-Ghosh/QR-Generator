@@ -1,1 +1,1 @@
-## QR code generator web app
+## QR code Generator web app
